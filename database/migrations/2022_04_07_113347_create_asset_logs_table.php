@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAssetLogsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('asset_logs', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->integer('asset_id')->nullable();
+            $table->text('description');
+            $table->string('value');
+            $table->string('currency');
+            $table->integer('user_id');
+            $table->softDeletes();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('asset_logs');
+    }
+}

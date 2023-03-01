@@ -1,0 +1,84 @@
+/**! Custom Styles Go Here (for easy template updating) **/
+.error {
+    color: #F00;
+}
+/*Message Loader*/
+.message-loader{
+	height: auto;
+	width: 50px;
+}
+/* Assets Css starts */
+.asset-loader {
+    top: 25px !important;
+    right: 165px !important;
+}
+.asset-btn {
+    top:25px;
+}
+.avanisLoader img {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    z-index: 99;
+}
+.registerLoader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    z-index: 99;
+}
+.loginLoader img {
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    width: 8%;
+    z-index: 99;
+}
+.forgotLoader img {
+    position: absolute;
+    top: 33%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    z-index: 99;
+}
+.download-label {
+    position: relative;
+    top: 26px;
+    padding: 0.47rem 0.75rem !important;
+    font-size: .8125rem;
+    border-radius: 0.25rem;
+    font-weight: 400;
+}
+
+.mfp-preloader {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    opacity: 0.65;
+    margin: 0 auto;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+    0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg) }
+    50% { transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) }
+    100% { transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg) }
+}
+.main-btn-section {
+    position: relative;
+    top: 10px;
+}
+  
